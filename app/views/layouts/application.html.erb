@@ -15,12 +15,14 @@
     </div>
     <ul class="nav navbar-nav">
       <li><%= link_to 'Videos', root_path %></li>
-      <li><%= link_to 'Add Video', new_video_upload_path %></li>
+      <% if current_user %>
+        <li><%= link_to 'Add Video', new_video_upload_path %></li>
+      <% end %>
     </ul>
     <ul class="nav navbar-nav pull-right">
       <% if current_user %>
         <li><span><%= current_user.name %></span></li>
-        <li><%= link_to 'Log Out', logout_path, method: :destroy %></li>
+        <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
       <% else %>
         <li><%= link_to 'Log In', '/auth/google_oauth2' %></li>
       <% end %>
