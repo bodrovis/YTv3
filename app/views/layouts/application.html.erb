@@ -15,8 +15,9 @@
     </div>
     <ul class="nav navbar-nav">
       <li><%= link_to 'Videos', root_path %></li>
+      <li><%= link_to 'Add Video', new_video_path %></li>
       <% if current_user %>
-        <li><%= link_to 'Add Video', new_video_upload_path %></li>
+        <li><%= link_to 'Upload Video', new_video_upload_path %></li>
       <% end %>
     </ul>
     <ul class="nav navbar-nav pull-right">
