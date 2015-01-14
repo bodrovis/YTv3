@@ -21,10 +21,4 @@ class VideoUploadsController < ApplicationController
       render :new
     end
   end
-
-  private
-
-  def video_upload_params
-    params.require(:video_upload).permit(:file, :title, :description)
-  end
 end
