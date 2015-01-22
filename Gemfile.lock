@@ -20,7 +20,7 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
-    active_type (0.3.2)
+    active_type (0.3.1)
       activerecord (>= 3.2)
     activejob (4.2.0)
       activesupport (= 4.2.0)
@@ -191,7 +191,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  active_type
+  active_type (= 0.3.1)
   annotate
   autoprefixer-rails
   better_errors (~> 2.1.0)

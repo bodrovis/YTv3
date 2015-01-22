@@ -43,7 +43,7 @@ gem 'rails-observers'
 
 gem 'omniauth-google-oauth2'
 
-gem 'active_type'
+gem 'active_type', '0.3.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 #gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
