@@ -23,7 +23,9 @@
                             "https://www.youtube.com/watch?v=#{video.uid}", target: '_blank' %>
                 <div class="caption">
                   <h5><%= video.title %></h5>
-                  <p>Published at <%= video.published_at.strftime('%-d %B %Y %H:%M:%S') %></p>
+                  <% if video.published_at %>
+                    <p>Published at <%= video.published_at.strftime('%-d %B %Y %H:%M:%S') %></p>
+                  <% end %>
                   <p>
                     <span class="glyphicon glyphicon glyphicon-thumbs-up"></span> <%= video.likes %>
                     <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= video.dislikes %>
